@@ -110,6 +110,58 @@ body {
     background-size: cover;
 }
 
+.feature {
+    font-size: 2rem;
+    font-family: 'NavFont', Arial, sans-serif;
+    text-shadow: 2px 2px 5px black;
+    margin: 20px 0;
+}
+
+/* Reusable border and padding style */
+.intro,
+.matchup,
+.about {
+    border: 3px solid darkgreen;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    border-radius: 10px;
+    background-color: rgba(46, 46, 46, 0.8);
+}
+
+.intro h2,
+.about h2,
+.matchup h3 {
+    font-family: 'NavFont', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.intro p,
+.about p,
+.matchup p,
+.matchup ul {
+    font-family: 'TextFont', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.matchup ul,
+.meta-tips ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.meta-tips {
+    background-color: rgba(46, 46, 46, 0.9);
+    border: 3px solid darkgreen;
+    padding: 20px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    max-width: 90%;
+    border-radius: 10px;
+    text-align: center;
+}
+
 .card-gallery {
     display: flex;
     flex-wrap: wrap;
