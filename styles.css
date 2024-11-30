@@ -33,8 +33,9 @@ header {
 
 .logo h1 {
     font-family: 'NavFont', Arial, sans-serif;
-    font-size: 2rem;
-    margin: 10;
+    font-size: 2.5rem;
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px black;
 }
 
 .nav-menu {
@@ -69,12 +70,20 @@ header {
     transition: color 0.3s, background-color 0.3s;
 }
 
+.nav-menu .active {
+    color: #2e2e2e;
+    background-color: darkgreen;
+    font-style: italic;
+}
+
 .nav-menu a:hover {
     color: #2e2e2e;
     background-color: wheat;
+    transform: scale(1.1);
 }
 
 footer {
+    border-top: 1px solid darkgreen;
     background-color: #2e2e2e;
     color: wheat;
     text-align: center;
