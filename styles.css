@@ -289,3 +289,39 @@ body {
     background: url('./Media/Cards/Tokens/Plant.png');
     background-size: cover;
 }
+
+.contact-form {
+    border: 3px solid darkgreen;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: rgba(46, 46, 46, 0.9);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: darkgreen;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #4CAF50;
+}
