@@ -33,7 +33,7 @@ header {
 .logo h1 {
     font-family: 'NavFont', Arial, sans-serif;
     font-size: 2.5rem;
-    margin: 10px 0;
+    margin: 5px 0;
     text-shadow: 2px 2px 5px black;
 }
 
@@ -72,7 +72,6 @@ header {
 .nav-menu .active {
     color: #2e2e2e;
     background-color: darkgreen;
-    font-style: italic;
 }
 
 .nav-menu a:hover {
@@ -176,9 +175,9 @@ body {
     background-size: cover;
     display: block;
     border-right: 2px solid darkgreen;
-  }
+}
 
-  .hover-image:hover {
+.hover-image:hover {
     background: url('./Media/Cards/Tokens/Consuming Sepulcher.png');
     background-size: cover;
-  }
+}
