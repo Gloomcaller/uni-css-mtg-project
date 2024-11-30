@@ -168,7 +168,7 @@ body {
     }
 }
 
-.hover-image {
+.hover-sepulcher {
     width: 40%;
     height: auto;
     background: url('./Media/Cards/Artifacts/Tithing Blade.png');
@@ -177,7 +177,63 @@ body {
     border-right: 2px solid darkgreen;
 }
 
-.hover-image:hover {
+.hover-sepulcher:hover {
     background: url('./Media/Cards/Tokens/Consuming Sepulcher.png');
+    background-size: cover;
+}
+
+.hover-rose {
+    width: 40%;
+    height: auto;
+    background: url('./Media/Cards/Creatures/Thorn of the Black Rose.png');
+    background-size: cover;
+    display: block;
+    border-right: 2px solid darkgreen;
+}
+
+.hover-rose:hover {
+    background: url('./Media/Cards/Tokens/The Monarch.png');
+    background-size: cover;
+}
+
+.hover-hunter {
+    width: 40%;
+    height: auto;
+    background: url('./Media/Cards/Creatures/Avenging Hunter.png');
+    background-size: cover;
+    display: block;
+    border-right: 2px solid darkgreen;
+}
+
+.hover-hunter:hover {
+    background: url('./Media/Cards/Tokens/Undercity.png');
+    background-size: cover;
+}
+
+.hover-dispute {
+    width: 40%;
+    height: auto;
+    background: url('./Media/Cards/Spells/Deadly Dispute.png');
+    background-size: cover;
+    display: block;
+    border-right: 2px solid darkgreen;
+}
+
+.hover-dispute:hover {
+    background: url('./Media/Cards/Tokens/Treasure.png');
+    background-size: cover;
+}
+
+.hover-garden {
+    width: 40%;
+    height: auto;
+    background: url('./Media/Cards/Lands/Khalni Garden.png');
+    background-size: cover;
+    display: block;
+    border-right: 2px solid darkgreen;
+}
+
+.hover-garden:hover {
+    background: url('./Media/Cards/Tokens/Plant.png');
     background-size: cover;
 }
