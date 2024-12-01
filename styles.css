@@ -11,6 +11,9 @@
 body {
     font-family: 'TextFont', Arial, sans-serif;
     background: url('./Media/Decor/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     color: wheat;
 }
@@ -101,13 +104,6 @@ h1,
 h2 {
     margin: 20px 0;
     font-family: 'NavFont', Arial, sans-serif;
-}
-
-body {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .feature {
@@ -207,16 +203,18 @@ body {
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .card {
-        width: calc(50% - 20px);
-    }
+.hover-lembas {
+    width: 40%;
+    height: auto;
+    background: url('./Media/Cards/Artifacts/Lembas.png');
+    background-size: cover;
+    display: block;
+    border-right: 2px solid darkgreen;
 }
 
-@media (max-width: 480px) {
-    .card {
-        width: 100%;
-    }
+.hover-lembas:hover {
+    background: url('./Media/Cards/Tokens/Food.png');
+    background-size: cover;
 }
 
 .hover-sepulcher {
@@ -303,9 +301,10 @@ body {
 .contact-form select,
 .contact-form textarea {
     width: 100%;
+    color: black;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ddd;
+    border: 1px solid white;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.8);
     box-sizing: border-box;
@@ -313,7 +312,7 @@ body {
 
 .contact-form button {
     background-color: darkgreen;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -322,5 +321,31 @@ body {
 }
 
 .contact-form button:hover {
-    background-color: #4CAF50;
+    background-color: darkgreen;
+}
+
+.deck-table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.deck-table th,
+.deck-table td {
+    border: 1px solid darkgreen;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: larger;
+    background-color: #2e2e2e;
+    color: wheat;
+}
+
+.deck-table th:first-child,
+.deck-table td:first-child {
+    width: 70%;
+}
+
+.deck-table th:last-child,
+.deck-table td:last-child {
+    width: 30%;
 }
