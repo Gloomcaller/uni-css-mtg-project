@@ -349,3 +349,47 @@ h2 {
 .deck-table td:last-child {
     width: 30%;
 }
+
+.orb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, black, darkgreen);
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.6);
+    animation: glow 2s infinite alternate, spin 5s infinite linear;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.orb-left {
+    margin-right: 50px;
+}
+
+.orb-right {
+    margin-left: 50px;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.6);
+    }
+
+    to {
+        box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.9);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
