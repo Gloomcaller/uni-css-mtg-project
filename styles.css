@@ -10,12 +10,10 @@
 
 body {
     font-family: 'TextFont', Arial, sans-serif;
-    background: url('./Media/Decor/background.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url('./Media/Decor/background.jpg') fixed center/cover no-repeat;
     color: wheat;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -102,7 +100,7 @@ main {
 
 h1,
 h2 {
-    margin: 20px 0;
+    margin: 20px 10px;
     font-family: 'NavFont', Arial, sans-serif;
 }
 
@@ -111,6 +109,18 @@ h2 {
     font-family: 'NavFont', Arial, sans-serif;
     text-shadow: 2px 2px 5px black;
     margin: 20px 0;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: wheat;
+    transition: color 0.3s, transform 0.2s;
+}
+
+a:hover {
+    color: darkgreen;
+    transform: scale(1.1);
 }
 
 .intro,
@@ -160,7 +170,6 @@ h2 {
 .card-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 20px;
     padding: 20px;
 }
@@ -175,7 +184,7 @@ h2 {
     width: calc(33.333% - 20px);
     box-shadow: 0px 4px 6px black;
     margin: 0 auto;
-    position: relative;
+    transition: transform 0.3s;
 }
 
 .card img {
@@ -188,6 +197,10 @@ h2 {
 .card-info {
     padding: 10px;
     width: 60%;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card-info h3 {
@@ -350,20 +363,21 @@ h2 {
     width: 30%;
 }
 
-.orb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, black, darkgreen);
-    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.6);
-    animation: glow 2s infinite alternate, spin 5s infinite linear;
-}
-
 .header-title {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.orb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -0.5%;
+    background: linear-gradient(135deg, black, darkgreen);
+    box-shadow: 0 0 10px 5px #00ff0099;
+    animation: glow 2s infinite alternate, spin 5s infinite linear;
 }
 
 .orb-left {
