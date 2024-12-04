@@ -37,7 +37,7 @@ header h1 {
     text-shadow: 2px 2px 5px black;
 }
 
-.header-title {
+.orber {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,7 @@ header h1 {
 }
 
 .nav-menu .active {
-    color: #2e2e2e;
+    color: wheat;
     background-color: darkgreen;
 }
 
@@ -135,6 +135,10 @@ ul {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+}
+
+.card:hover {
+    animation: greenglow 2s infinite alternate;
 }
 
 .card {
@@ -317,7 +321,7 @@ ul {
     margin-top: -0.5%;
     background: linear-gradient(135deg, black, darkgreen);
     box-shadow: 0 0 10px 5px #00ff0099;
-    animation: glow 2s infinite alternate, spin 5s infinite linear;
+    animation: greenglow 2s infinite alternate, spin 5s infinite linear;
 }
 
 .orb-left {
@@ -328,13 +332,13 @@ ul {
     margin-left: 50px;
 }
 
-@keyframes glow {
+@keyframes greenglow {
     from {
-        box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.6);
+        box-shadow: 0 0 10px 5px #00ff0099;
     }
 
     to {
-        box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.9);
+        box-shadow: 0 0 20px 10px #00ff00e6;
     }
 }
 
