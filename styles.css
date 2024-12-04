@@ -58,7 +58,6 @@ header h1 {
 }
 
 .nav-menu li {
-    margin: 0;
     border-right: 1px solid darkgreen;
 }
 
@@ -104,17 +103,11 @@ main {
     text-align: center;
 }
 
-h1,
-h2 {
-    margin: 20px 10px;
-    font-family: 'NavFont', Arial, sans-serif;
-}
-
-.feature {
-    font-size: 2rem;
+.featured {
+    font-size: x-large;
     font-family: 'NavFont', Arial, sans-serif;
     text-shadow: 2px 2px 5px black;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 a {
@@ -129,48 +122,24 @@ a:hover {
     transform: scale(1.1);
 }
 
-.intro,
-.matchup,
-.about {
+.info-box {
     border: 3px solid darkgreen;
     padding: 20px;
     margin: 20px auto;
     max-width: 90%;
     border-radius: 10px;
-    background-color: rgba(46, 46, 46, 0.8);
+    background-color: #2e2e2ecc;
 }
 
-.intro h2,
-.about h2,
-.matchup h3 {
-    font-family: 'NavFont', Arial, sans-serif;
-    margin-bottom: 10px;
-}
-
-.intro p,
-.about p,
-.matchup p,
-.matchup ul {
+.info-box p,
+ul {
     font-family: 'TextFont', Arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.matchup ul,
-.meta-tips ul {
+    font-size: large;
+    line-height: 1.5;
     list-style-type: none;
-    margin-left: 20px;
-}
-
-.meta-tips {
-    background-color: rgba(46, 46, 46, 0.9);
-    border: 3px solid darkgreen;
-    padding: 20px;
-    margin: 20px auto;
-    margin-bottom: 50px;
-    max-width: 90%;
-    border-radius: 10px;
-    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-content: center;
 }
 
 .card-gallery {
@@ -182,7 +151,7 @@ a:hover {
 
 .card {
     display: flex;
-    background-color: #2e2e2e;
+    background-color: #2e2e2ecc;
     color: wheat;
     border: 2px solid darkgreen;
     border-radius: 12px;
