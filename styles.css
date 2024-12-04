@@ -86,18 +86,6 @@ header h1 {
     transform: scale(1.1);
 }
 
-footer {
-    font-size: smaller;
-    border-top: 1px solid darkgreen;
-    background-color: #2e2e2e;
-    color: wheat;
-    text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
 main {
     padding: 20px;
     text-align: center;
